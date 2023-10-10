@@ -1,0 +1,40 @@
+body {
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background: yellow;
+  width: 800px;
+  height: 600px;
+}
+.screen {
+  border: 5px solid black;
+  background: red;
+  width: 750px;
+  height: 300px;
+  margin: 10px auto;
+}
+.game-zone {
+  // border: 1px solid black;
+  // background: blueviolet;
+  width: 750px;
+  height: 300px;
+  margin: 10px auto;
+  display : flex;
+  justify-content: space-between;
+}
+.game-zone-controls {
+  border: 5px solid black;
+  background: pink;
+  width: 250px;
+}
+.game-zone-infos {
+  border: 5px solid black;
+  background: green;
+  width: 470px;
+}
