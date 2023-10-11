@@ -4,6 +4,11 @@ body {
   justify-content: center;
 }
 
+span {
+  color: white;
+  text-shadow: 2px 1px 2px black;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -22,10 +27,63 @@ body {
   outline-offset: 1px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-image: url("/asset/img/Monsters_Arena_001.png");
+  background-size: cover;
 }
 .screen img {
   width: 750px;
   height: 450px;
+}
+.screen .screen-left {
+  border: 1px solid green;
+  width: 250px;
+  height: 280px;
+  position: relative;
+  bottom: 385px;
+  left: 100px;
+}
+.screen .screen-left img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.screen .screen-left .screen-boss-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.screen .screen-left .screen-boss-name span {
+  margin-right: 5px;
+}
+.screen .screen-left .lifebar-boss {
+  display: flex;
+  margin-bottom: 2px;
+}
+.screen .screen-left .lifebar-boss .lifebar {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 8px;
+  background: red;
+}
+.screen .screen-left .magicbar-boss {
+  display: flex;
+}
+.screen .screen-left .magicbar-boss .magicbar {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: blueviolet;
+}
+.screen .screen-right {
+  border: 1px solid green;
+  width: 250px;
+  height: 280px;
+  position: relative;
+  bottom: 641px;
+  left: 410px;
+  background: red;
 }
 
 .game-zone {
