@@ -12,7 +12,6 @@ span {
 .main-container {
   display: flex;
   flex-direction: column;
-  background: yellow;
   width: 800px;
   height: 600px;
 }
@@ -100,45 +99,48 @@ span {
 .screen .screen-right .player1 {
   width: 100px;
   position: relative;
-  top: 98px;
+  top: 152px;
   left: -24px;
 }
 .screen .screen-right .player2 {
   width: 100px;
   position: relative;
-  top: -18px;
-  left: 67px;
+  top: 94px;
+  left: 85px;
 }
 .screen .screen-right .player3 {
   width: 100px;
   position: relative;
-  top: -212px;
+  top: -39px;
   left: 182px;
 }
-.screen .player-name {
+
+.player-name {
   display: flex;
   align-items: center;
   justify-content: left;
 }
-.screen .player-name span {
+.player-name span {
   margin-right: 5px;
 }
-.screen .lifebar-player {
+
+.lifebar-player {
   display: flex;
   margin-bottom: 2px;
   justify-content: center;
 }
-.screen .lifebar-player .lifebar {
+.lifebar-player .lifebar {
   width: 100%;
   border: 2px solid black;
   border-radius: 5px;
   margin-left: 8px;
   background: green;
 }
-.screen .magicbar-player {
+
+.magicbar-player {
   display: flex;
 }
-.screen .magicbar-player .magicbar {
+.magicbar-player .magicbar {
   width: 100%;
   border: 2px solid black;
   border-radius: 5px;
@@ -156,7 +158,7 @@ span {
 
 .game-zone-controls {
   border: 3px solid black;
-  background: pink;
+  background: rgb(115, 141, 115);
   width: 250px;
   outline: 5px solid black;
   outline-offset: 1px;
@@ -184,10 +186,61 @@ span {
 
 .game-zone-infos {
   border: 3px solid black;
-  background: green;
+  background: rgb(115, 141, 115);
   width: 470px;
   outline: 5px solid black;
   outline-offset: 1px;
   background-image: url("/asset/img/Screen_002.png");
   background-position: center;
+}
+.game-zone-infos .portrait-player {
+  display: flex;
+  margin: 10px 10px 10px 55px;
+  align-items: center;
+}
+.game-zone-infos .portrait-player .portrait-flex {
+  width: 85px;
+}
+.game-zone-infos .portrait-player i {
+  margin: 0 5px;
+}
+.game-zone-infos .portrait-player .life-magic {
+  width: 140px;
+  margin: 0 10px;
+}
+.game-zone-infos .portrait-player .life-magic .lifebar-player {
+  display: flex;
+  margin-bottom: 2px;
+  justify-content: center;
+}
+.game-zone-infos .portrait-player .life-magic .lifebar-player .lifebar {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 8px;
+  background: red;
+}
+.game-zone-infos .portrait-player .life-magic .magicbar-player {
+  display: flex;
+}
+.game-zone-infos .portrait-player .life-magic .magicbar-player .magicbar {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: blueviolet;
+}
+.game-zone-infos #swordp2 {
+  width: 18px;
+  margin: 0 5px;
+}
+.game-zone-infos .player-state {
+  display: flex;
+  flex-direction: row;
+}
+.game-zone-infos .player-state .cube-state {
+  border: 2px solid black;
+  width: 30px;
+  height: 30px;
+  margin: 0 2px;
 }/*# sourceMappingURL=style.css.map */

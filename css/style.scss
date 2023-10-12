@@ -10,7 +10,7 @@ span {
 .main-container {
   display: flex;
   flex-direction: column;
-  background: yellow;
+  // background: yellow;
   width: 800px;
   height: 600px;
 }
@@ -98,20 +98,21 @@ span {
     .player1 {
       width:100px;
       position:relative;
-      top: 98px;
+      top: 152px;
       left: -24px;
     }
     .player2 {
       width:100px;
       position:relative;
-      top: -18px;
-      left: 67px;
+      top: 94px;
+      left: 85px;
     }
     .player3 {
       width:100px;
       position:relative;
-      top: -212px;
+      top: -39px;
       left: 182px;
+    }
     }
   }
   .player-name {
@@ -146,7 +147,7 @@ span {
       background: blueviolet;
     }
   }
-}
+
 .game-zone {
   // border: 1px solid black;
   // background: blueviolet;
@@ -158,7 +159,7 @@ span {
 }
 .game-zone-controls {
   border: 3px solid black;
-  background: pink;
+  background: rgb(115, 141, 115);
   width: 250px;
   outline: 5px solid black;
   outline-offset: 1px;
@@ -187,11 +188,61 @@ span {
 }
 .game-zone-infos {
   border: 3px solid black;
-  background: green;
+  background: rgb(115, 141, 115);
   width: 470px;
   outline: 5px solid black;
   outline-offset: 1px;
   background-image: url("/asset/img/Screen_002.png");
   background-position: center;
-
+  .portrait-player {
+    display: flex;
+    margin: 10px 10px 10px 55px;
+    align-items: center;
+    .portrait-flex {
+      width: 85px;
+    }
+    i {
+      margin: 0 5px;
+    }
+    .life-magic {
+      width:140px;
+      margin: 0 10px;
+    .lifebar-player {
+      display: flex;
+      margin-bottom: 2px;
+      justify-content: center;
+      .lifebar {
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-left: 8px;
+        background: red;
+      }
+    }
+    .magicbar-player {
+      display: flex;
+      .magicbar {
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-left: 5px;
+        background: blueviolet;
+      }
+    }
+}
+}
+#swordp2 {
+  width: 18px;
+  margin: 0 5px;
+}
+.player-state {
+  display: flex;
+  flex-direction : row;
+  .cube-state {
+    border: 2px solid black;
+    width : 30px;
+    height: 30px;
+    margin: 0 2px;
+  }
+}
 }
