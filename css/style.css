@@ -76,13 +76,74 @@ span {
   background: blueviolet;
 }
 .screen .screen-right {
-  border: 1px solid green;
   width: 250px;
   height: 280px;
   position: relative;
   bottom: 641px;
   left: 410px;
-  background: red;
+}
+.screen .screen-right #img-player1 {
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+.screen .screen-right #img-player2 {
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+}
+.screen .screen-right #img-player3 {
+  width: 100px;
+  height: 100px;
+  z-index: 4;
+}
+.screen .screen-right .player1 {
+  width: 100px;
+  position: relative;
+  top: 98px;
+  left: -24px;
+}
+.screen .screen-right .player2 {
+  width: 100px;
+  position: relative;
+  top: -18px;
+  left: 67px;
+}
+.screen .screen-right .player3 {
+  width: 100px;
+  position: relative;
+  top: -212px;
+  left: 182px;
+}
+.screen .player-name {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.screen .player-name span {
+  margin-right: 5px;
+}
+.screen .lifebar-player {
+  display: flex;
+  margin-bottom: 2px;
+  justify-content: center;
+}
+.screen .lifebar-player .lifebar {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 8px;
+  background: green;
+}
+.screen .magicbar-player {
+  display: flex;
+}
+.screen .magicbar-player .magicbar {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: blueviolet;
 }
 
 .game-zone {

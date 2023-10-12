@@ -73,13 +73,78 @@ span {
     }
   }
   .screen-right {
-    border: 1px solid green;
+    // border: 1px solid green;
     width: 250px;
     height: 280px;
     position: relative;
     bottom: 641px;
     left: 410px;
-    background: red;
+    // background: red;
+    #img-player1 {
+      width:100px;
+      height:100px;
+      z-index: 2;
+    }
+    #img-player2 {
+      width:100px;
+      height:100px;
+      z-index: 3;
+    }
+    #img-player3 {
+      width:100px;
+      height:100px;
+      z-index: 4;
+    }
+    .player1 {
+      width:100px;
+      position:relative;
+      top: 98px;
+      left: -24px;
+    }
+    .player2 {
+      width:100px;
+      position:relative;
+      top: -18px;
+      left: 67px;
+    }
+    .player3 {
+      width:100px;
+      position:relative;
+      top: -212px;
+      left: 182px;
+    }
+  }
+  .player-name {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    span {
+      margin-right : 5px;
+    }
+  }
+  .lifebar-player {
+    display: flex;
+    margin-bottom: 2px;
+
+    justify-content: center;
+    .lifebar {
+      width: 100%;
+      border: 2px solid black;
+      border-radius: 5px;
+      margin-left: 8px;
+      background: green;
+    }
+  }
+  .magicbar-player {
+    display: flex;
+
+    .magicbar {
+      width: 100%;
+      border: 2px solid black;
+      border-radius: 5px;
+      margin-left: 5px;
+      background: blueviolet;
+    }
   }
 }
 .game-zone {
