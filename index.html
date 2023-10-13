@@ -7,6 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fc9e95532b.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -60,6 +63,9 @@
 <!-- SCREEN LEFT : BOSS -->
 <!-- SCREEN RIGHT : PLAYER -->
           <div class="screen-right">
+  <!-- SCREEN RIGHT : TEXT -->
+            <div class="screen-text"></div>
+  <!-- SCREEN RIGHT : TEXT -->
   <!-- SCREEN RIGHT : PLAYER 1 -->
             <div class="player1">
               <img id="img-player1"src="asset/img/characters/Perso_003.png" alt="SnailKnight">
@@ -81,13 +87,26 @@
 <!-- SCREEN -->
         <div class="game-zone">
           <div class="game-zone-controls">
-            <div id="vision" class="controls"><img src="asset/img/vision.png" alt="Un oeil de pouvoir" class="controls-img"></div>
-            <div class="line2">
-              <div id="shield" class="controls"><img src="asset/img/shield.png" alt="Un oeil de pouvoir" class="controls-img"></div>
-              <div id="sword" class="controls"><img src="asset/img/sword.png" alt="Un oeil de pouvoir" class="controls-img"></div>
-              <div id="magie" class="controls"><img src="asset/img/magie.png" alt="Un oeil de pouvoir" class="controls-img"></div>
+            <div id="vision" class="controls">
+              <img src="asset/img/vision.png" alt="Un oeil de pouvoir" class="controls-img">
+              <span>Vision</span>
             </div>
-            <div id="bag" class="controls"><img src="asset/img/bag.png" alt="Un oeil de pouvoir" class="controls-img"></div>
+            <div id="shield" class="controls">
+              <img src="asset/img/shield.png" alt="Un oeil de pouvoir" class="controls-img">
+              <span>Defense</span>
+            </div>
+            <div id="sword" class="controls">
+              <img src="asset/img/sword.png" alt="Un oeil de pouvoir"
+               class="controls-img"><span>Attack</span>
+            </div>
+            <div id="magie" class="controls">
+              <img src="asset/img/magie.png" alt="Un oeil de pouvoir" class="controls-img">
+              <span>Magic</span>
+            </div>
+            <div id="bag" class="controls">
+              <img src="asset/img/bag.png" alt="Un oeil de pouvoir" class="controls-img">
+              <span>Bag</span>
+            </div>
           </div>
           <div class="game-zone-infos">
   <!-- SCREEN RIGHT : PORTRAIT PLAYER 1 -->
@@ -123,9 +142,9 @@
                 </div>
               </div>
               <div class="player-state">
-                <div class="cube-state"></div>
-                <div class="cube-state"></div>
-                <div class="cube-state"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons22.png" alt="lorem"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons50.png" alt="lorem"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons20.png" alt="lorem"></div>
               </div>
             </div>
   <!-- SCREEN RIGHT : PORTRAIT PLAYER 1 -->
@@ -163,9 +182,9 @@
                 </div>
               </div>
               <div class="player-state">
-                <div class="cube-state"></div>
-                <div class="cube-state"></div>
-                <div class="cube-state"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons6.png" alt="lorem"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons45.png" alt="lorem"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons36.png" alt="lorem"></div>
               </div>
             </div>
   <!-- SCREEN RIGHT : PORTRAIT PLAYER 2 -->
@@ -204,9 +223,9 @@
                 </div>
               </div>
               <div class="player-state">
-                <div class="cube-state"></div>
-                <div class="cube-state"></div>
-                <div class="cube-state"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons10.png" alt="lorem"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons23.png" alt="lorem"></div>
+                <div class="cube-state"><img src="/asset/img/skill_icons44.png" alt="lorem"></div>
               </div>
             </div>
 <!-- SCREEN RIGHT : PORTRAIT PLAYER 3 -->

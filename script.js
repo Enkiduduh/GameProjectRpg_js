@@ -2,13 +2,16 @@
 const vision = document.getElementById("vision");
 const sword = document.getElementById("sword");
 const btnCool = document.getElementById("btn-cool");
+const screenText = document.querySelector(".screen-text");
 
-console.log(sword);
+let msgCombat = "";
 
-btnCool.addEventListener("click", attack)
 
 sword.addEventListener("click", attack)
 
 function attack (){
-  console.log("Lancer une attaque normale!")
+ msgCombat.innerHTML = "Lancer une attaque normale!";
 }
+
+
+screenText
