@@ -95,14 +95,28 @@ span {
     bottom: 641px;
     left: 410px;
     .screen-text{
-      width: 260px;
+      width: 280px;
       height: 100px;
       position: absolute;
       top: -10px;
       left: 10px;
       border: 4px solid black;
-      border-radius: 15px;
-      background: rgba(167, 164, 164, 0.4);
+      background: rgba(92, 91, 91, 0.8);
+      overflow: auto;
+      scrollbar-color: rgba(150, 149, 149, 0.8) transparent;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+      p {
+        margin: 1px 5px 1px 10px;
+        line-height:1.2;
+        color: white;
+        font-size: 15px;
+        font-family: 'Eczar', serif;
+        white-space:normal;
+        text-shadow: 2px 2px 2px black;
+
+
+      }
     }
     #img-player1 {
       width:100px;
@@ -191,7 +205,10 @@ span {
     }
   }
   .controls-img {
-    width:35px;
+    width:48px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 4px solid rgb(41, 66, 129);
 
   }
 }
