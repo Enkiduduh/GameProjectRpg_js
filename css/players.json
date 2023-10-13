@@ -1,0 +1,68 @@
+[
+  {
+    "player_id" : 1,
+    "name": "Korikoji",
+    "type": "Tank",
+    "lifepoint": 120,
+    "magicpoint": 40,
+    "skill_1": {
+      "name" :"Taunt",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    },
+    "skill_2": {
+      "name" :"Shield Bash",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    },
+    "skill_3": {
+      "name" :"Charged Strike",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    }
+  },
+  {
+    "player_id" : 2,
+    "name": "Korikoji",
+    "type": "Fighter",
+    "lifepoint": 100,
+    "magicpoint": 60,
+    "skill_1": {
+      "name" :"Spear Thrust",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    },
+    "skill_2": {
+      "name" :"Multiple Hits",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    },
+    "skill_3": {
+      "name" :"Charged Strike",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    }
+  },
+  {
+    "player_id" : 3,
+    "name": "Arthes",
+    "type": "Mage",
+    "lifepoint": 80,
+    "magicpoint": 80,
+    "skill_1": {
+      "name" :"Ice Meteor",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    },
+    "skill_2": {
+      "name" :"Forest Spirit",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    },
+    "skill_3": {
+      "name" :"Ice Meteor",
+      "magic_cost": 10,
+      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+    }
+  }
+]

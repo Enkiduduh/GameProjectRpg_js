@@ -54,21 +54,35 @@ span {
       display: flex;
       margin-bottom: 2px;
       .lifebar {
-        width: 100%;
-        border: 2px solid black;
-        border-radius: 5px;
         margin-left: 8px;
-        background: red;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .life {
+          width: 10px;
+          border: 1px solid white;
+          border-radius: 2px;
+          margin-left: 2px;
+          background: red;
+          box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
       }
     }
     .magicbar-boss {
       display: flex;
       .magicbar {
-        width: 100%;
-        border: 2px solid black;
-        border-radius: 5px;
         margin-left: 5px;
-        background: blueviolet;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .magic {
+          width: 10px;
+          border: 1px solid white;
+          border-radius: 2px;
+          margin-left: 2px;
+          background: purple;
+          box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
       }
     }
   }
@@ -123,30 +137,8 @@ span {
       margin-right : 5px;
     }
   }
-  .lifebar-player {
-    display: flex;
-    margin-bottom: 2px;
 
-    justify-content: center;
-    .lifebar {
-      width: 100%;
-      border: 2px solid black;
-      border-radius: 5px;
-      margin-left: 8px;
-      background: green;
-    }
-  }
-  .magicbar-player {
-    display: flex;
 
-    .magicbar {
-      width: 100%;
-      border: 2px solid black;
-      border-radius: 5px;
-      margin-left: 5px;
-      background: blueviolet;
-    }
-  }
 
 .game-zone {
   // border: 1px solid black;
@@ -207,28 +199,40 @@ span {
     .life-magic {
       width:140px;
       margin: 0 10px;
-    .lifebar-player {
-      display: flex;
-      margin-bottom: 2px;
-      justify-content: center;
-      .lifebar {
-        width: 100%;
-        border: 2px solid black;
-        border-radius: 5px;
-        margin-left: 8px;
-        background: red;
+      .lifebar-player {
+        display: flex;
+        margin-bottom: 2px;
+        justify-content: left;
+        .lifebar {
+          margin-left: 8px;
+          display:flex;
+          flex-direction: row;
+          .life {
+            width: 10px;
+            border: 1px solid white;
+            border-radius: 2px;
+            margin-left: 2px;
+            background: red;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+          }
+        }
       }
-    }
-    .magicbar-player {
-      display: flex;
-      .magicbar {
-        width: 100%;
-        border: 2px solid black;
-        border-radius: 5px;
-        margin-left: 5px;
-        background: blueviolet;
+      .magicbar-player {
+        display: flex;
+        .magicbar {
+          margin-left: 5px;
+          display:flex;
+          flex-direction: row;
+          .magic {
+            width: 10px;
+            border: 1px solid white;
+            border-radius: 2px;
+            margin-left: 2px;
+            background: purple;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+          }
+        }
       }
-    }
 }
 }
 #swordp2 {
