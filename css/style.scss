@@ -94,28 +94,44 @@ span {
     position: relative;
     bottom: 641px;
     left: 410px;
+    #img-screen1 {
+      width: 301px;
+      height: 140px;
+      position: relative;
+      top: -104px;
+      left: 350px;
+    }
+    #img-screen2 {
+      width: 301px;
+      height: 140px;
+      position: relative;
+      top: 85px;
+      left: 350px;
+    }
+
     .screen-text{
       width: 280px;
-      height: 100px;
+      height: 177px;
       position: absolute;
-      top: -10px;
-      left: 10px;
+      padding: 140px 0;
+      top: -100px;
+      left: 355px;
       border: 4px solid black;
       background: rgba(92, 91, 91, 0.8);
       overflow: auto;
       scrollbar-color: rgba(150, 149, 149, 0.8) transparent;
       scrollbar-width: none;
       scroll-behavior: smooth;
+      background-image: url("/asset/img/vintage-grunge-paper-background.jpg");
+      background-size: auto;
       p {
-        margin: 1px 5px 1px 10px;
+        margin: 2px 5px 1px 10px;
         line-height:1.2;
         color: white;
         font-size: 15px;
         font-family: 'Eczar', serif;
         white-space:normal;
         text-shadow: 2px 2px 2px black;
-
-
       }
     }
     #img-player1 {
@@ -136,19 +152,19 @@ span {
     .player1 {
       width:100px;
       position:relative;
-      top: 152px;
+      top: -135px;
       left: -24px;
     }
     .player2 {
       width:100px;
       position:relative;
-      top: 94px;
+      top: -187px;
       left: 85px;
     }
     .player3 {
       width:100px;
       position:relative;
-      top: -39px;
+      top: -326px;
       left: 182px;
     }
     }
@@ -178,6 +194,7 @@ span {
   outline-offset: 1px;
   display: flex;
   flex-direction: column;
+  background: black;
   .controls {
     border: 1px solid black;
     width: 248px;
@@ -194,6 +211,13 @@ span {
       letter-spacing: 3px;
       transition: margin-left 150ms ease-in-out;
     }
+    .controls-img {
+      width:48px;
+      border-radius: 25px;
+      // border-bottom-right-radius: 25px;
+      border: 2px solid rgb(0, 0, 0);
+      transition: margin-left 150ms ease-in-out;
+    }
     &:hover {
       background-color: #230717;
       background-image: linear-gradient(90deg, #230717 0%, #59d3e4 35%, #0998de 65%, #07414c 100%);
@@ -202,15 +226,13 @@ span {
         font-family: 'Eczar', serif;
         font-size: 22px;
       }
+      img {
+        margin-left: 15px;
+      }
     }
   }
-  .controls-img {
-    width:48px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border: 4px solid rgb(41, 66, 129);
 
-  }
+
 }
 // GAME ZONE CONTROLS
 
@@ -222,12 +244,42 @@ span {
   width: 470px;
   outline: 5px solid black;
   outline-offset: 1px;
-  background-image: url("/asset/img/Screen_002.png");
+  background-image: url("/asset/img/bg_parchemin.png");
   background-position: center;
+  z-index: 3;
+  position: relative;
+  .game-zone-infos-bg {
+    width:100%;
+    height:100%;
+    background-image: url("/asset/img/Screen_002.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+  position: relative;
+  }
+  .portrait-container {
+    border: 1px solid black;
+    width : 100%;
+  }
+  #portrait-p1 {
+    align-items: center;
+    position: relative;
+    top: 10px;
+  }
+  #portrait-p2 {
+    align-items: center;
+    position: relative;
+    top: 15px;
+  }
+  #portrait-p3 {
+    align-items: center;
+    position: relative;
+    top: 27px;
+  }
   .portrait-player {
     display: flex;
-    margin: 10px 10px 10px 55px;
-    align-items: center;
+    margin: 0 10px 0 55px;
     .portrait-flex {
       width: 85px;
     }
@@ -291,4 +343,34 @@ span {
     }
   }
 }
+.player-overlay {
+  width: 466px;
+  border: 2px solid black;
+  height: 76px;
+  background-color: #230717;
+  background-image: linear-gradient(90deg, #230717 0%, #3c52c1 35%, #1071a3 65%, #01252b 100%);
+  opacity: 0.3;
+  z-index: 0;
+}
+ .p1 {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+ }
+ .p2 {
+  position: absolute;
+  top: 85px;
+  left: 0px;
+ }
+ .p3 {
+  position: absolute;
+  top: 165px;
+  left: 0px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 50%, #ffffff 100%);
+ }
+ .turn_active { // Va mettre en vert l'OVL pour la selection du player
+  background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 50%, #ffffff 100%);
+  background-color: #08AEEA;
+ }
 }
