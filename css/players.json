@@ -8,17 +8,23 @@
     "skill_1": {
       "name" :"Taunt",
       "magic_cost": 10,
-      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+      "damage_infliged": 0,
+      "critical_chance": 0,
+      "effect": "A knight protects with courage and honor. The target will focus on you for 2 turns."
     },
     "skill_2": {
       "name" :"Shield Bash",
       "magic_cost": 10,
-      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+      "damage_infliged": 10,
+      "critical_chance": 10,
+      "effect": "A violent charge with your shield."
     },
     "skill_3": {
-      "name" :"Charged Strike",
+      "name" :"Mana Strike",
       "magic_cost": 10,
-      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+      "damage_infliged": 20,
+      "critical_chance": 30,
+      "effect": "Casts a long ranged slicing mana blade on your target."
     }
   },
   {
@@ -30,16 +36,22 @@
     "skill_1": {
       "name" :"Spear Thrust",
       "magic_cost": 10,
+      "damage_infliged": 20,
+      "critical_chance": 30,
       "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
     },
     "skill_2": {
       "name" :"Multiple Hits",
-      "magic_cost": 10,
+      "magic_cost": 20,
+      "damage_infliged": 40,
+      "critical_chance": 10,
       "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
     },
     "skill_3": {
       "name" :"Charged Strike",
-      "magic_cost": 10,
+      "magic_cost": 30,
+      "damage_infliged": 30,
+      "critical_chance": 60,
       "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
     }
   },
@@ -50,19 +62,25 @@
     "lifepoint": 80,
     "magicpoint": 80,
     "skill_1": {
-      "name" :"Ice Meteor",
+      "name" :"Ice Spear",
       "magic_cost": 10,
-      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+      "damage_infliged": 10,
+      "critical_chance": 70,
+      "effect": "Casts an ice spear piercing the target. Have a small chance to freeze for 1 turn."
     },
     "skill_2": {
-      "name" :"Forest Spirit",
-      "magic_cost": 10,
-      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+      "name" :"Hell Vortex",
+      "magic_cost": 30,
+      "damage_infliged": 40,
+      "critical_chance": 20,
+      "effect": "Unleash a vortex of intense fire. Only dust will remain."
     },
     "skill_3": {
-      "name" :"Ice Meteor",
-      "magic_cost": 10,
-      "effect": "An ice meteor falls on the enemy. Have a small chance to freeze the enemy for 1 turn."
+      "name" :"Mana Bullets",
+      "magic_cost": 50,
+      "damage_infliged": 60,
+      "critical_chance": 30,
+      "effect": "Machine Gun Mana Bullets. That's all."
     }
   }
 ]
