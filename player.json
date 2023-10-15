@@ -1,6 +1,6 @@
 [
   {
-    "player_id" : 1,
+    "id" : 1,
     "name": "Korikoji",
     "type": "Tank",
     "lifepoint": 120,
@@ -10,7 +10,8 @@
       "magic_cost": 10,
       "damage_infliged": 0,
       "critical_chance": 0,
-      "effect": "A knight protects with courage and honor. The target will focus on you for 2 turns."
+      "effect": "A knight protects with courage and honor. The target will focus on you for 2 turns.",
+      "img" : "./asset/img/mage_skill1.png"
     },
     "skill_2": {
       "name" :"Shield Bash",
@@ -28,7 +29,7 @@
     }
   },
   {
-    "player_id" : 2,
+    "id" : 2,
     "name": "Korikoji",
     "type": "Fighter",
     "lifepoint": 100,
@@ -56,7 +57,7 @@
     }
   },
   {
-    "player_id" : 3,
+    "id" : 3,
     "name": "Arthes",
     "type": "Mage",
     "lifepoint": 80,

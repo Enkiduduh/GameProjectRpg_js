@@ -16,7 +16,7 @@ const potion2 = document.getElementById("potion2");
 const potion3 = document.getElementById("potion3");
 
 const portraitP1 = document.getElementById("portrait-p1");
-const portraits_Player = document.querySelectorAll(".portrait-player");
+const portraits_Overlay = document.querySelectorAll(".portrait-overlay");
 
 // sword.addEventListener("click", attack)
 function attack (){
@@ -103,16 +103,20 @@ function CloseMenu (){
 }
 
 
-// Sélection de votre personnage : Overlay
-portraits_Player.forEach((portraitPlayer) => {
-  portraitPlayer.addEventListener("click", choiceCharacter)
-});
 
+// // Sélection de votre personnage : Overlay
+// portraits_Overlay.forEach((portraitOverlay) => {
+//   portraitOverlay.addEventListener("click", function (e) {
+//     // portraitPlayer.classList.add("turn_active");
+//     // portraitPlayer.removeAttribute("")
+//     portraitOverlay.setAttribute("opacity", "0.8");
+//   })
+// });
 
-
-
+// background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 50%, #ffffff 100%);
+// background-color: #08AEEA;
 
 
 export {vision, sword, shield, magic, bag, screenText,
-returnBtn, skill1, skill2, skill3,portraits_Player, attack, defense,
-openMenuMagic,openMenuBag ,CloseMenu}
+returnBtn, skill1, skill2, skill3,portraits_Overlay, attack, defense,
+openMenuMagic,openMenuBag ,CloseMenu, jsonData}

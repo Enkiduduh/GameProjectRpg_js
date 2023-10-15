@@ -423,5 +423,7 @@ span {
  .turn_active { // Va mettre en vert l'OVL pour la selection du player
   background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 50%, #ffffff 100%);
   background-color: #08AEEA;
+  opacity: 0.3;
+  z-index: 0;
  }
 }

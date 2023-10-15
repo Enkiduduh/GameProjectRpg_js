@@ -1,7 +1,7 @@
 //fichier js principale
 import {vision, sword, shield, magic, bag, screenText,
-  returnBtn, skill1, skill2, skill3,portraits_Player, attack, defense,
-  openMenuMagic, CloseMenu, openMenuBag} from './module.js'
+  returnBtn, skill1, skill2, skill3,portraits_Overlay, attack, defense,
+  openMenuMagic, CloseMenu, openMenuBag, jsonData} from './module.js'
 
 // Lancement de l'action Attaque
 sword.addEventListener("click", attack)
@@ -18,4 +18,22 @@ returnBtn.addEventListener("click", CloseMenu)
 // Ouverture du menu d'action : BAG
 bag.addEventListener("click", openMenuBag)
 
-console.log(portraitPlayer)
+
+
+// const playerOne = '{"id" : 1,  "name": "Korikoji",  "type": "Tank",  "lifepoint": 120,  "magicpoint": 40 }'
+// const obj = JSON.parse(playerOne);
+
+// let messageHero =`Your hero's name is ${obj.name}, he's a ${obj.type} with ${obj.lifepoint} PV.`
+// console.log(messageHero)
+
+
+console.log(jsonData);
+
+// const json = '{"result":true, "count":42}';
+// const obj = JSON.parse(json);
+
+// console.log(obj.count);
+// // Expected output: 42
+
+// console.log(obj.result);
+// // Expected output: true
