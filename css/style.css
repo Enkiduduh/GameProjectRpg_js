@@ -223,16 +223,24 @@ span {
   justify-content: space-between;
 }
 
-.game-zone-controls {
+.game-zone-controls.c1 {
   border: 3px solid black;
   width: 250px;
+  height: 260px;
   outline: 5px solid black;
   outline-offset: 1px;
   display: flex;
   flex-direction: column;
   background: black;
+  overflow: auto;
+  scrollbar-color: rgba(150, 149, 149, 0.8) transparent;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
-.game-zone-controls .controls {
+.game-zone-controls.c1 .controls-hidden {
+  display: none;
+}
+.game-zone-controls.c1 .controls {
   border: 1px solid black;
   width: 248px;
   height: 50px;
@@ -242,29 +250,29 @@ span {
   background-color: #230717;
   background-image: linear-gradient(90deg, #230717 0%, #3c52c1 35%, #1071a3 65%, #01252b 100%);
 }
-.game-zone-controls .controls span {
+.game-zone-controls.c1 .controls span {
   margin-left: 10px;
   font-family: "Eczar", serif;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 3px;
   transition: margin-left 150ms ease-in-out;
 }
-.game-zone-controls .controls .controls-img {
+.game-zone-controls.c1 .controls .controls-img {
   width: 48px;
   border-radius: 25px;
   border: 2px solid rgb(0, 0, 0);
   transition: margin-left 150ms ease-in-out;
 }
-.game-zone-controls .controls:hover {
+.game-zone-controls.c1 .controls:hover {
   background-color: #230717;
   background-image: linear-gradient(90deg, #230717 0%, #59d3e4 35%, #0998de 65%, #07414c 100%);
 }
-.game-zone-controls .controls:hover span {
+.game-zone-controls.c1 .controls:hover span {
   margin-left: 20px;
   font-family: "Eczar", serif;
   font-size: 22px;
 }
-.game-zone-controls .controls:hover img {
+.game-zone-controls.c1 .controls:hover img {
   margin-left: 15px;
 }
 

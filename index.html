@@ -69,7 +69,7 @@
             <img id="img-screen2" src="/asset/img/woodzone_text.png" alt="woodzone">
             <div id="description-span" class="title-description"><span>Description</span></div>
             <div id="options-span" class="title-options"><span>Options</span></div>            <div class="screen-infos">
-              <div class="img-infos"><img src="/asset/img/FrostMage_2.png" alt="Frost Ice Spear"><!-- Injection via appendChild de l'image du Skill/Effet/Text correspondant --></div>
+              <div class="img-infos"><img src="/asset/img/mage_skill1.png" alt="Frost Ice Spear"><!-- Injection via appendChild de l'image du Skill/Effet/Text correspondant --></div>
               <div class="descriptions-infos">
                 <h3>Dimensional Ice Spear</h3>
                 <span>Cast an ice spear on your ennemie. Have a small chance to freeze the target for 1s.</span></div>
@@ -96,7 +96,7 @@
         </div>
 <!-- SCREEN -->
         <div class="game-zone">
-          <div class="game-zone-controls">
+          <div class="game-zone-controls c1">
             <div id="vision" class="controls">
               <img src="asset/img/vision.png" alt="Un oeil de pouvoir" class="controls-img">
               <span>Vision</span>
@@ -109,7 +109,7 @@
               <img src="asset/img/sword.png" alt="Un oeil de pouvoir"
                class="controls-img"><span>Attack</span>
             </div>
-            <div id="magie" class="controls">
+            <div id="magic" class="controls">
               <img src="asset/img/magie.png" alt="Un oeil de pouvoir" class="controls-img">
               <span>Magic</span>
             </div>
@@ -117,9 +117,25 @@
               <img src="asset/img/bag.png" alt="Un oeil de pouvoir" class="controls-img">
               <span>Bag</span>
             </div>
+<!-- Extra zone -->
+            <div id="skill1" class="controls-hidden">
+              <img src="asset/img/mage_skill1.png" alt="mage skill 1" class="controls-img">
+              <span>Ice Spear</span>
+            </div>
+            <div id="skill2" class="controls-hidden">
+              <img src="asset/img/mage_skill2.png" alt="mage skill 2" class="controls-img">
+              <span>Hell Vortex</span>
+            </div>
+            <div id="skill3" class="controls-hidden">
+              <img src="asset/img/mage_skill3.png" alt="mage skill 3" class="controls-img">
+              <span>Mana Bullets</span>
+            </div>
+            <div id="return" class="controls-hidden">
+              <img src="asset/img/return_icon.png" alt="Return" class="controls-img">
+              <span>Return</span>
+            </div>
+<!-- Extra zone -->
           </div>
-          <!-- l -->
-          <!-- l -->
           <div class="game-zone-infos">
             <div class="player-overlay p1"></div>
             <div class="player-overlay p2"></div>
@@ -252,6 +268,6 @@
       </div>
     </main>
 
-    <script src="script.js" async defer></script>
+    <script type='module' src="main.js" async defer></script>
   </body>
 </html>

@@ -230,14 +230,22 @@ span {
 }
 
 ///////// GAME ZONE CONTROLS
-.game-zone-controls {
+.game-zone-controls.c1 {
   border: 3px solid black;
   width: 250px;
+  height: 260px;
   outline: 5px solid black;
   outline-offset: 1px;
   display: flex;
   flex-direction: column;
   background: black;
+  overflow: auto;
+  scrollbar-color: rgba(150, 149, 149, 0.8) transparent;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  .controls-hidden {
+    display :none;
+  }
   .controls {
     border: 1px solid black;
     width: 248px;
@@ -250,7 +258,7 @@ span {
     span {
       margin-left : 10px;
       font-family: 'Eczar', serif;
-      font-size: 20px;
+      font-size: 18px;
       letter-spacing: 3px;
       transition: margin-left 150ms ease-in-out;
     }
