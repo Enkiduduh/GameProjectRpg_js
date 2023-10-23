@@ -1,7 +1,7 @@
 //fichier js principale
 import {vision, sword, shield, magic, bag, screenText,
   returnBtn, skill1, skill2, skill3,portraits_Overlay, attack, defense,
-  openMenuMagic, CloseMenu, openMenuBag, jsonData} from './module.js'
+  openMenuMagic, CloseMenu, openMenuBag} from './module.js'
 
 // Lancement de l'action Attaque
 sword.addEventListener("click", attack)
@@ -26,8 +26,8 @@ bag.addEventListener("click", openMenuBag)
 // let messageHero =`Your hero's name is ${obj.name}, he's a ${obj.type} with ${obj.lifepoint} PV.`
 // console.log(messageHero)
 
-
-console.log(jsonData);
+const json1 = require('./players.json');
+console.log(json1);
 
 // const json = '{"result":true, "count":42}';
 // const obj = JSON.parse(json);

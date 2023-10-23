@@ -99,7 +99,9 @@ function CloseMenu (){
   potion3.classList.add("controls-hidden");
   potion3.classList.remove("controls");
   returnBtn.classList.add("controls-hidden");
+
   returnBtn.classList.remove("controls");
+
 }
 
 
@@ -119,4 +121,4 @@ function CloseMenu (){
 
 export {vision, sword, shield, magic, bag, screenText,
 returnBtn, skill1, skill2, skill3,portraits_Overlay, attack, defense,
-openMenuMagic,openMenuBag ,CloseMenu, jsonData}
+openMenuMagic,openMenuBag ,CloseMenu}
